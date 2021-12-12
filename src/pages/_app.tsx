@@ -1,14 +1,12 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import Layout from "@containers/Layout";
+import { ChakraProvider } from '@chakra-ui/react';
+import Layout from '@containers/Layout';
 
-function App({ Component, pageProps }) {
-  return (
-    <ChakraProvider resetCSS>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ChakraProvider>
-  );
-}
+const App = ({ Component, pageProps }) => (
+  <ChakraProvider resetCSS>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </ChakraProvider>
+);
 
 export default App;
