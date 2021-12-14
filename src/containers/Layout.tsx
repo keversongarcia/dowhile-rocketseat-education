@@ -1,7 +1,8 @@
-import { Box } from '@chakra-ui/react';
-import Header from '@components/Header';
+import { Box } from "@chakra-ui/react";
+import Header from "@components/Header";
+import { ReactElement } from "react";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: ReactElement }) => {
   return (
     <Box>
       <Header />

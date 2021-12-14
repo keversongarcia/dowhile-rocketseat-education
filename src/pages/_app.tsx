@@ -1,7 +1,8 @@
-import { ChakraProvider } from '@chakra-ui/react';
-import Layout from '@containers/Layout';
+import { ChakraProvider } from "@chakra-ui/react";
+import Layout from "@containers/Layout";
+import { AppProps } from "next/app";
 
-const App = ({ Component, pageProps }) => (
+const App = ({ Component, pageProps }: AppProps) => (
   <ChakraProvider resetCSS>
     <Layout>
       <Component {...pageProps} />
